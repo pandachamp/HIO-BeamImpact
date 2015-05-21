@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>PangYa : Hole in One :3</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script type="text/javascript" src="cal.js"></script>
+<style>
+* { font-family: Helvetica; }
+body { background: #bdc3c7; }
+.container {margin-top:30px;}
+#box { background: #ecf0f1; padding: 20px 20px; 
+-webkit-box-shadow:rgb(0, 0, 0) 0px 0px 60px -20px;
+-moz-box-shadow:rgb(0, 0, 0) 0px 0px 60px -20px;
+box-shadow:rgb(0, 0, 0) 0px 0px 60px -20px;
+}
+</style>
+</head>
+<body>
+<script src="bootstrap.min.js"></script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6" id="box">
+			<center><h1>PangYa : Hole in One -> Beam Impact</h1></center><hr>
+
+	  <form name="cal" class="form-horizontal" role="form">
+           
+                <!-- -->
+			<div class="form-group">
+                <label for="distance" class="col-sm-2 control-label">Hole Distance</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="dis" placeholder="Distance" name="dis" onKeyUp="calc()">
+                </div>
+            </div>
+            <!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Height</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="hi" placeholder="Height" name="hi" onKeyUp="calc()">
+                </div>
+            </div>
+            
+            <!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Wind</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="wind" placeholder="Wind" name="wind" onKeyUp="calc()">
+                </div>
+            </div>
+            <!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Angle of Wind</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="angw" placeholder="Degree" name="angw" onKeyUp="calc()">
+                </div>
+            </div>
+            <!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Wind Position</label>
+                <div class="col-sm-6">
+                    <div class="radio">
+                    <label>
+    <input type="radio" name="windp" id="windp" value="2" onClick="calc()" checked>
+    Top Left
+  </label>
+  <label>
+    <input type="radio" name="windp" id="windp" value="1" onClick="calc()">
+    Top Right
+  </label>
+  <label>
+    <input type="radio" name="windp" id="windp" value="4" onClick="calc()">
+    Bottom Left
+  </label>
+  <label>
+    <input type="radio" name="windp" id="windp" value="3" onClick="calc()">
+    Bottom Right
+  </label>
+</div>
+                    </div>
+                </div>
+                <!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Green Cell</label>
+                <div class="col-sm-6">
+                <input type="text" class="form-control" id="pcell" disabled placeholder="ทิศทางย้าย" name="pcell" >
+                 <input type="text" class="form-control" id="cellpb" disabled placeholder="ช่วงการย้ายใน Green ในหน่วย PB" name="cellpb" >
+                </div>
+            </div>
+       		<!-- -->
+            <div class="form-group">
+                <label for="height" class="col-sm-2 control-label">Power</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" disabled id="power" placeholder="ความแรงที่ใช้ตี" name="power">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="distance" class="col-sm-2 control-label"></label>
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-sm btn-info" onclick="calc()">Test</button>
+                </div>
+            </div>
+            
+			</form>
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+    <center><h6><i>Developed by <a href="http://www.puriene.com">Byakko</a> : ENE นะ</i></h6> 
+</div>
+</body>
+</html>
